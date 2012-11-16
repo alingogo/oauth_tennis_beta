@@ -44,4 +44,5 @@ group :test do
   #gem 'spork'
   gem 'guard-spork'
   gem 'rspec-rails'
+  gem 'rb-fsevent'
 end
