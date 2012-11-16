@@ -36,3 +36,12 @@ end
 
 # To use debugger
 # gem 'debugger'
+
+group :test do
+  #gem 'rspec'
+  #gem 'guard'
+  gem 'guard-rspec'
+  #gem 'spork'
+  gem 'guard-spork'
+  gem 'rspec-rails'
+end
