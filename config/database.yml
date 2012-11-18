@@ -15,7 +15,7 @@ development:
   adapter: postgresql
   host: ec2-107-22-169-148.compute-1.amazonaws.com
   database: dffj07perj4ns6
-  user:  zcodwratdnzlxh
+  username:  zcodwratdnzlxh
   port:  5432
   password: KO61Zh2v0CtZxqLMZlp0wAQSZK
   pool: 5
@@ -34,7 +34,7 @@ production:
   adapter: postgresql
   host: ec2-107-22-169-148.compute-1.amazonaws.com
   database: dffj07perj4ns6
-  user:  zcodwratdnzlxh
+  username:  zcodwratdnzlxh
   port:  5432
   password: KO61Zh2v0CtZxqLMZlp0wAQSZK
   pool: 5
