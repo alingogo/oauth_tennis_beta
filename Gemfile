@@ -22,7 +22,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-group :production do
+group :development, :production do
   gem 'thin'
 end
 
