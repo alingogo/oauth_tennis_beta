@@ -32,10 +32,16 @@ test:
 
 production:
   adapter: postgresql
-  pool: 5
-  timeout: 5000
-  host: ec2-107-22-169-148.compute-1.amazonaws.com
-  database: dc3j9u4bm81ahu
-  user:  khkxlsvlbfjzqg
-  port:  5432
-  password: C2r4FhWTkMDefkQ5WJ6fqR-V1d
+  host: localhost
+  username: user
+  database: app-dev
+  port: 5432
+#production:
+#  adapter: postgresql
+#  pool: 5
+#  timeout: 5000
+#  host: ec2-107-22-169-148.compute-1.amazonaws.com
+#  database: dc3j9u4bm81ahu
+#  user:  khkxlsvlbfjzqg
+#  port:  5432
+#  password: C2r4FhWTkMDefkQ5WJ6fqR-V1d
