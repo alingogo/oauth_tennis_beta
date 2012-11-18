@@ -22,6 +22,7 @@ group :assets do
 end
 
 group :development, :production do
+  gem 'thin'
   gem 'pg'
 end
 
