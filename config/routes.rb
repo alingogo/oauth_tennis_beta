@@ -4,6 +4,10 @@ Tennis::Application.routes.draw do
   root :to => "posts#index"
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 
+  devise_scope :users do
+#get 'sign_out', :to => 'devise/sessions#destroy'#, :as => :destroy_user_session
+    delete '/usres/sign_out', :to => 'devise/sessions#destroy', :as => :destroy_user_session
+  end
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
