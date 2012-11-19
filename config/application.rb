@@ -65,6 +65,7 @@ module Tennis
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
+    #config.assets.initialize_on_precompile = false
     # Part of a Spork hack. See http://bit.ly/arY19y
     if Rails.env.test? && defined?(Spork) && Spork.using_spork?
       initializer :after => :initialize_dependency_mechanism do
