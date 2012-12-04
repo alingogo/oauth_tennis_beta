@@ -29,7 +29,7 @@ test:
   database: db/test.sqlite3
   pool: 5
   timeout: 5000
-
+=begin
 <%=
 require "uri"
 url=URI.parse(ENV[HEROKU_POSTGRESQL_IVORY_URL])
@@ -38,7 +38,7 @@ production:
   adapter: <%= url.scheme %>
   host: <%= url.hostname %>
   database: <%= url.path.scan(/^\/(.+)/) %>
-  username:  <%= url.user %>
+#  username:  <%= url.user %>
   port:  <%= url.port %>
   password: <%= url.password %>
   pool: 5
