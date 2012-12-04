@@ -15,13 +15,10 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
 
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
-
   gem 'uglifier', '>= 1.0.3'
 end
 
-group :development, :production do
+group :production do
   gem 'thin'
   gem 'pg'
   gem 'therubyracer-heroku'
@@ -42,12 +39,14 @@ end
 
 # To use debugger
 # gem 'debugger'
+group :development, :test do
+  gem 'sqlite3'
+  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
+  gem 'therubyracer', '0.10.2', :platforms => :ruby
+end
 
 group :test do
-  #gem 'rspec'
-  #gem 'guard'
   gem 'guard-rspec'
-  #gem 'spork'
   gem 'guard-spork'
   gem 'rspec-rails'
   gem 'rb-fsevent'

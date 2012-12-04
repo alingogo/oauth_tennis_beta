@@ -5,19 +5,9 @@
 #   gem 'sqlite3'
 
 
-#development:
-#  adapter: postgresql
-#  host: localhost
-#  username: user
-#  database: app-dev
-#  port: 5432
 development:
-  adapter: postgresql
-  host: ec2-107-22-169-148.compute-1.amazonaws.com
-  database: dffj07perj4ns6
-  username:  zcodwratdnzlxh
-  port:  5432
-  password: KO61Zh2v0CtZxqLMZlp0wAQSZK
+  adapter: sqlite3
+  database: db/development.sqlite3
   pool: 5
   timeout: 5000
 
@@ -30,21 +20,5 @@ test:
   pool: 5
   timeout: 5000
 
+# when deploy, heroku generate database.yml by DATABASE_URL
 production:
-  adapter: postgresql
-  host: ec2-107-22-169-148.compute-1.amazonaws.com
-  database: dffj07perj4ns6
-  username:  zcodwratdnzlxh
-  port:  5432
-  password: KO61Zh2v0CtZxqLMZlp0wAQSZK
-  pool: 5
-  timeout: 5000
-#production:
-#  adapter: postgresql
-#  pool: 5
-#  timeout: 5000
-#  host: ec2-107-22-169-148.compute-1.amazonaws.com
-#  database: dc3j9u4bm81ahu
-#  user:  khkxlsvlbfjzqg
-#  port:  5432
-#  password: C2r4FhWTkMDefkQ5WJ6fqR-V1d
