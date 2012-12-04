@@ -1,10 +1,15 @@
 # SQLite version 3.x
+<<<<<<< HEAD
+=======
+#
+>>>>>>> master
 #   gem install sqlite3
 #
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
 
 
+<<<<<<< HEAD
 #development:
 #  adapter: postgresql
 #  host: localhost
@@ -18,6 +23,11 @@ development:
   username:  zcodwratdnzlxh
   port:  5432
   password: KO61Zh2v0CtZxqLMZlp0wAQSZK
+=======
+development:
+  adapter: sqlite3
+  database: db/development.sqlite3
+>>>>>>> master
   pool: 5
   timeout: 5000
 
@@ -30,6 +40,7 @@ test:
   pool: 5
   timeout: 5000
 
+<<<<<<< HEAD
 production:
   adapter: postgresql
   host: ec2-107-22-169-148.compute-1.amazonaws.com
@@ -48,3 +59,7 @@ production:
 #  user:  khkxlsvlbfjzqg
 #  port:  5432
 #  password: C2r4FhWTkMDefkQ5WJ6fqR-V1d
+=======
+# when deploy, heroku generate database.yml by DATABASE_URL
+production:
+>>>>>>> master
