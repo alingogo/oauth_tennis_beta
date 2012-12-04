@@ -21,7 +21,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-group :development, :production do
+group :production do
   gem 'thin'
   gem 'pg'
   gem 'therubyracer-heroku'
@@ -42,12 +42,12 @@ end
 
 # To use debugger
 # gem 'debugger'
+group :development, :test do
+  gem 'sqlite3'
+end
 
 group :test do
-  #gem 'rspec'
-  #gem 'guard'
   gem 'guard-rspec'
-  #gem 'spork'
   gem 'guard-spork'
   gem 'rspec-rails'
   gem 'rb-fsevent'
